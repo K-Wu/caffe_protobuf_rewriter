@@ -8,5 +8,7 @@ Compile for nv_small
 Generate test image (4704 Byte)
 
 ```
-dd if=/dev/zero of=test.img bs=4 count=0 seek=1176
+import numpy
+numpy.random.random(6*14*14).astype(numpy.float32).tofile("test.img")
 ```
+
